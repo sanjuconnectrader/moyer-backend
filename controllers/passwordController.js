@@ -1,5 +1,5 @@
 import { body, validationResult } from 'express-validator';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import Admin from '../models/Admin.js';
 import transporter, { generateOTP } from '../config/nodemailer.js'; // adjust path as needed
 

@@ -15,6 +15,6 @@ router.get('/', getAllPhotos);
 
 /* admin */
 router.post('/',  authorizeAdmin, uploadPhotography, uploadPhoto);
-router.delete('/:photoId', authorizeAdmin, deletePhoto);
+router.delete('/:photoId', deletePhoto);
 
 export default router;
